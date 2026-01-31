@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sukimy Roll | Menú</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+<img src="./sushi foto xd.png" alt="Decoración" class="bg-image-left">
+
+<div class="bg-text-wrapper">
+    <div class="bg-text">SUKIMY</div>
+</div>
+
+<header class="header">
+    <div class="header-content">
+        
+        <div class="header-center">
+            <img src="./sukimi_logo.png" alt="Logo Tacos Yiyo" class="logo">
+            <p>Menú digital</p>
+        </div>
+
+        <div class="contact-box">
+            <div class="contact-title">Info de contacto</div>
+            <div class="phone-row">
+                <span>📞</span>
+                <span id="telefono">687-145-1508</span>
+            </div>
+            <button class="copy-btn" onclick="copiarTelefono()">
+                Copiar número
+            </button>
+            <a href="https://wa.me/526878761552" target="_blank" class="wsp-btn">
+                📞 Hacer pedido
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav class="category-nav">
+    <div class="nav-scroll">
+        <a href="#entradas" class="nav-item">Entradas</a>
+        <a href="#empanizados" class="nav-item">Empanizados</a>
+        <a href="#horneados" class="nav-item">Horneados</a>
+        <a href="#naturales" class="nav-item">Naturales</a>
+        <a href="#extras" class="nav-item">Extras</a>
+        <a href="#bebidas" class="nav-item">Bebidas</a>
+    </div>
+</nav>
+
+<div class="container">
+
+    <!--================= ENTRADAS =====================-->
+    <h2 id="entradas" class="section-title">Entradas</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/TacoMaiz.png" alt="Dedo queso">
+            <div class="card-body">
+                <h3>Dedo de queso (PZ)</h3>
+                <p>Barita de queso empanizada, bañada con salsa de anguila y ajonjolí. </p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$20</span></div></div>
+                    <button class="add-to-cart" 
+                    data-nombre="Dedo de queso" 
+                    data-precio="20" 
+                    data-ingredientes="anguila, ajonjolí"> ➕ Agregar
+                    </button>
+             </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TacoMaiz.png" alt="Chile relleno">
+            <div class="card-body">
+                <h3>Chile relleno (PZ)</h3>
+                <p>Chile caribe relleno de Philadelphia, ensalada de surimi, empanizados, bañados en salsa de la casa. </p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$30</span></div></div>
+                    <button class="add-to-cart" 
+                    data-nombre="Chile relleno" 
+                    data-precio="20" 
+                    data-ingredientes="philadelphia, surimi, salsa de la casa"> ➕ Agregar
+                    </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TacoHarina.png" alt="Chile relleno mixto">
+            <div class="card-body">
+                <h3>Chile relleno mixto (PZ)</h3>
+                <p>Chile caribe relleno de carne, camaron, ensalada de surimi, empanizado y bañado en salsa de la casa</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$40</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Chile relleno mixto" 
+                    data-precio="40" 
+                    data-ingredientes="carne, camaron, surimi, salsa de la casa"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TacoHarina.png" alt="Papas sazonadas">
+            <div class="card-body">
+                <h3>Papas sazonadas (ORD.)</h3>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$80</span></div></div>
+                 <button class="add-to-cart" 
+                    data-nombre="Papas sazonadas" 
+                    data-precio="80"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/Gordita.png" alt="Boneless">
+            <div class="card-body">
+                <h3>Boneless (ORD)</h3>
+                <p>Pollo empanizado bañado en salsa de su prefencia, acompañado con papas sazonadas.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$130</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Boneless" 
+                    data-precio="130" 
+                    data-ingredientes="BBQ, Buffalo, Mango Habanero"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--================= ENTRADAS =====================-->
+
+
+    
+    <!--================= EMPANIZADOS =====================-->
+    <h2 id="empanizados" class="section-title">Empanizados</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/ChilenaMaiz.png" alt="Mar y Tierra">
+            <div class="card-body">
+                <h3>Mar y Tierra</h3>
+                <p>Philadelphia, aguacate, pepino, res y camarón</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$110</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Mar y Tierra" 
+                    data-precio="110" 
+                    data-ingredientes="philadelphia, aguacate, pepino, res, camarón"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/ChilenaMaiz.png" alt="Cielo Mar y Tierra">
+            <div class="card-body">
+                <h3>Cielo Mar y Tierra</h3>
+                <p>Philadelphia, aguacate, pepino, pollo, res y camarón</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$120</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Cielo Mar y Tierra" 
+                    data-precio="120" 
+                    data-ingredientes="philadelphia, aguacate, pepino, pollo, res, camarón"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/Chilenota.png" alt="Guamuchilito roll">
+            <div class="card-body">
+                <h3>Guamuchilito Roll</h3>
+                <p>Philadelphia, pepino, surimi. por fuera: ensalada de surimi, aguacate, bañado con salsa de anguila</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$135</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Guamuchilito Roll" 
+                    data-precio="135" 
+                    data-ingredientes="philadelphia, aguacate, pepino, ensalada de surimi, aguacate, anguila"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/Chilenota.png" alt="Empanizado Especial">
+            <div class="card-body">
+                <h3>Empanizado Especial</h3>
+                <p>Philadelphia, pepino, surimi empanizado. por fuera: coronado con ensalada de tampico, camarón empanizado y anguila</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$145</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Empanizado Especial" 
+                    data-precio="145" 
+                    data-ingredientes="philadelphia, aguacate, pepino, surimi empanizado, tampico, camaron empanizado, anguila"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/Chilenota.png" alt="Sushi Bola">
+            <div class="card-body">
+                <h3>Sushi Bola</h3>
+                <p>Arroz empanizado relleno de philadelphia, ensalada de tampico, camarón, pollo y res</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$120</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Sushi Bola" 
+                    data-precio="120" 
+                    data-ingredientes="philadelphia, ensalada de tampico, camarón, pollo, res"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+                <div class="card">
+            <img src="./imagenes/Chilenota.png" alt="Plancha">
+            <div class="card-body">
+                <h3>Plancha</h3>
+                <p>Cama de arroz empanizada, encima philadelphia, carne, pollo y camarón. bañado en salsa de la casa.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$125</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Plancha" 
+                    data-precio="125" 
+                    data-ingredientes="philadelphia, aguacate, pepino, surimi empanizado, tampico, camaron empanizado, anguila"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+         <div class="card">
+            <img src="./imagenes/Chilenota.png" alt="Sushi Boneless">
+            <div class="card-body">
+                <h3>Sushi Boneless</h3>
+                <p>Philadelphia, aguacate, pepino, res o camarón. por fuera: Boneless bañados en salsa de su prefencia.   (bbq, buffalo, mango habanero)</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$150</span></div></div>
+                 <button class="add-to-cart" 
+                    data-nombre="Sushi Boneless" 
+                    data-precio="150" 
+                    data-ingredientes="philadelphia, aguacate, pepino"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+           <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="Sukimi Roll XXL">
+            <div class="card-body">
+                <h3>Sukimi Roll XXL (Empanizado) ⭐</h3>
+                <p>
+                    Philadelphia, aguacate, pepino, res, barra de surimi empanizado,
+                    tocino, queso chihuahua, bañado en queso, salsa de anguila y ajonjolí.           
+                </p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$195</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Sukimi Roll XXL" 
+                    data-precio="195" 
+                    data-ingredientes="philadelphia, aguacate, pepino, res, surimi empanizado, tocino, queso chihuahua, baño de queso, anguila, ajonjolí"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--================= EMPANIZADOS =====================-->
+
+
+
+    <!--================= HORNEADOS =====================-->
+    <h2 id="horneados" class="section-title">Horenados</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="Tres Quesos">
+            <div class="card-body">
+                <h3>Tres Quesos</h3>
+                <p>Philadelphia, aguacate, res y pollo, bañado en un una exclusiva salsa tres quesos, encima salsa de anguina y ajonjolí. </p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$135</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Tres Quesos" 
+                    data-precio="135" 
+                    data-ingredientes="philadelphia, aguacate, res, pollo, salsa tres quesos, anguila, ajonjolí"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="Carnivoro Roll">
+            <div class="card-body">
+                <h3>Carnivoro Roll ⭐</h3>
+                <p>philadelphia, aguacate, pepino, pollo, res. por fuera: salsa de queso de la casa, con chipotle, carne y tocino.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$155</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Carnivoro Roll" 
+                    data-precio="155" 
+                    data-ingredientes="philadelphia, aguacate, pepino, pollo, res, salsa de queso, chipotle, tocino"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="Serranito Roll">
+            <div class="card-body">
+                <h3>Serranito Roll</h3>
+                <p>philadelphia, aguacate, pepino y res. por fuera: queso chihuahua con trozos de chile serrano y aderezo de cilantro.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$135</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Serranito Roll" 
+                    data-precio="135" 
+                    data-ingredientes="philadelphia, aguacate, res, queso chihuahua, trozos de chile serrano, aderezo de cilantro"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="Chipotle Roll">
+            <div class="card-body">
+                <h3>Chipotle Roll</h3>
+                <p>philadelphia, aguacate, pepino y res. por fuera: sala de queso, chipotle, trozos de tocino y salsa de anguila.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$135</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Chipotle Roll" 
+                    data-precio="135" 
+                    data-ingredientes="philadelphia, aguacate, pepino, res, salsa de queso, chipotle, tocino, anguila"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="The Big Rollo">
+            <div class="card-body">
+                <h3>The Big Rollo</h3>
+                <p>philadelphia, aguacate, pepino, res, barra de surimi empanizado, tocino, queso chihuahua, bañado en queso, salsa de anguila y ajonjolí.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$160</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="The Big Rollo" 
+                    data-precio="160" 
+                    data-ingredientes="philadelphia, aguacate, pepino, res, surimi empanizado, tocino, queso chihuahua, baño de queso, anguila, ajonjolí"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/TortaEspecialConQueso.png" alt="Sukimi Roll XXL">
+            <div class="card-body">
+                <h3>Sukimi Roll XXL (Horneado) ⭐</h3>
+                <p>
+                    Philadelphia, aguacate, pepino, res, barra de surimi empanizado,
+                    tocino, queso chihuahua, bañado en queso, salsa de anguila y ajonjolí.           
+                </p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$160</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Sukimi Roll XXL" 
+                    data-precio="220" 
+                    data-ingredientes="philadelphia, aguacate, pepino, res, surimi empanizado, tocino, queso chihuahua, baño de queso, anguila, ajonjolí"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--================= HORNEADOS =====================-->
+
+
+
+    <!--================= NATURALES =====================-->
+    <h2 id="naturales" class="section-title">🌯 Naturales</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/Burrote.png" alt="California">
+            <div class="card-body">
+                <h3>California</h3>
+                <p>Philadelphia, aguacate, pepino y surimi.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$100</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="California" 
+                    data-precio="100" 
+                    data-ingredientes="philadelphia, aguacate, pepino, surimi"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/Burrote.png" alt="Camaronito">
+            <div class="card-body">
+                <h3>Camaronito</h3>
+                <p>Philadelphia, aguacate, pepino y camarón. Coronado con ensalada de tampico.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$125</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Camaronito" 
+                    data-precio="125" 
+                    data-ingredientes="philadelphia, aguacate, pepino, camaron, ensalada de tampico"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+            <div class="card">
+            <img src="./imagenes/Burrote.png" alt="Arcoiris">
+            <div class="card-body">
+                <h3>Arcoiris</h3>
+                <p>Philadelphia, aguacate, pepino, camaron. por fuera: forrado de aguacate, surimi y camarón.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$130</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Arcoiris" 
+                    data-precio="130" 
+                    data-ingredientes="philadelphia, aguacate, pepino, surimi, camaron"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+            <div class="card">
+            <img src="./imagenes/Burrote.png" alt="Aguacatito Roll">
+            <div class="card-body">
+                <h3>Aguacatito Roll</h3>
+                <p>Philadelphia, aguacate, pepino, camaron empanizado. por fuera: forrado con laminas de aguacate.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$115</span></div></div>
+                <button class="add-to-cart" 
+                    data-nombre="Aguacatito Roll" 
+                    data-precio="115" 
+                    data-ingredientes="philadelphia, aguacate, pepino, camaron empanizado"> ➕ Agregar
+                </button>
+            </div>
+        </div>
+            <div class="card">
+            <img src="./imagenes/Burrote.png" alt="Atunito Roll">
+            <div class="card-body">
+                <h3>Atunito Roll</h3>
+                <p>Philadelphia, aguacate, pepino y camaron empanizado. por fuera: forrado con atún, tampico y aderezo de cilantro.</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$160</span></div></div>
+                <button class="add-to-cart"
+                    data-nombre="Atunito Roll" 
+                    data-precio="160" 
+                    data-ingredientes="philadelphia, aguacate, pepino, camaron empanizado, atún, tampico, aderezo de cilantro."> ➕ Agregar
+                </button>
+            </div>
+        </div>
+    </div>
+    <!--================= NATURALES =====================-->
+
+
+
+    <!--================= BEBIDAS =====================-->
+    <h2 id="bebidas" class="section-title">🥤 Bebidas</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/Coca600.png" alt="Te casa 500">
+            <div class="card-body">
+                <h3>Té de la casa 500 ML</h3>
+                <p></p>
+                <span class="single-price">$32</span>
+                <button class="add-to-cart" data-nombre="Te casa 500" data-precio="32">➕ Agregar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/AguaCiel.png" alt="Te casa 1000">
+            <div class="card-body">
+                <h3>Té de la casa 1Lt </h3>
+                <p></p>
+                <span class="single-price">$27</span>
+                <button class="add-to-cart" data-nombre="Te casa 1000" data-precio="27">➕ Agregar</button>
+            </div>
+        </div>
+         <div class="card">
+            <img src="./imagenes/AguaCiel.png" alt="Coca cola 600ml">
+            <div class="card-body">
+                <h3>Coca cola 600ml</h3>
+                <p></p>
+                <span class="single-price">$27</span>
+                <button class="add-to-cart" data-nombre="Coca cola 600" data-precio="27">➕ Agregar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/AguaCiel.png" alt="Té Jaztea">
+            <div class="card-body">
+                <h3>Té Jaztea</h3>
+                <p></p>
+                <span class="single-price">$27</span>
+                <button class="add-to-cart" data-nombre="Jaztea" data-precio="27">➕ Agregar</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/AguaCiel.png" alt="Agua 500m">
+            <div class="card-body">
+                <h3>Agua 500ml</h3>
+                <p></p>
+                <span class="single-price">$27</span>
+                <button class="add-to-cart" data-nombre="Agua 500" data-precio="27">➕ Agregar</button>
+            </div>
+        </div>
+    </div>
+
+        <!--================= EXTRAS =====================-->
+    <h2 id="extras" class="section-title">Costos Extras</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="./imagenes/PapaChica.png" alt="Desechables">
+            <div class="card-body">
+                <h3>Desechables</h3>
+                <p>Platos para llevar</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$5</span></div></div>
+           <!-- <button class="add-to-cart" data-nombre="Desechables" data-precio="5">➕ Agregar</button> -->
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/PapaChica.png" alt="Aderezos">
+            <div class="card-body">
+                <h3>Aderezos</h3>
+                <p>(Chipotle, Cilantro, BBQ, etc.)</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$10</span></div></div>
+            <!-- <button class="add-to-cart" data-nombre="Proteina" data-precio="10">➕ Agregar</button> -->
+            </div>
+        </div>
+         <div class="card">
+            <img src="./imagenes/PapaChica.png" alt="Protenia">
+            <div class="card-body">
+                <h3>Protenia</h3>
+                <p>(Camarón, Res, Pollo, Surimi.)</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$25</span></div></div>
+            <!-- <button class="add-to-cart" data-nombre="Proteina" data-precio="25">➕ Agregar</button> -->
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/PapaChica.png" alt="Empanizado">
+            <div class="card-body">
+                <h3>Empanizado</h3>
+                <p>Empanizado extra</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$10</span></div></div>
+                <!-- <button class="add-to-cart" data-nombre="Empanizado" data-precio="10">➕ Agregar</button> -->
+            </div>
+        </div>
+        <div class="card">
+            <img src="./imagenes/PapaChica.png" alt="Domicilio">
+            <div class="card-body">
+                <h3>Domicilio</h3>
+                <p>Costo servicio a domicilio $20 / $30</p>
+                <div class="price-table"><div class="price-row"><span class="p-label"></span> <span class="p-value">$20</span></div></div>
+              <!--  <button class="add-to-cart" data-nombre="Domicilio" data-precio="20">➕ Agregar</button> -->
+            </div>
+        </div>
+    </div>
+    <!--================= EXTRAS =====================-->
+
+</div>
+
+<div class="footer-cta">
+        <a href="https://wa.me/6871451508" target="_blank" class="wsp-btn-large">
+            📞 Hacer mi pedido por WhatsApp
+        </a>
+    </div>
+</div> <footer>
+    © Sukimy Roll · Menú digital
+</footer>
+
+<a href="#combos" class="floating-btn">
+    💝 Ver Combos Especiales
+</a>
+
+<a href="https://wa.me/6871451508" target="_blank" class="floating-wsp-btn">
+    📞 Pedir por WhatsApp.     💬
+</a>
+
+<div id="cart-container" class="cart-floating">
+    <div class="cart-header">
+        <h4>Tu Pedido 🌮</h4>
+        <div class="cart-header-btns">
+            <button onclick="vaciarCarrito()" class="empty-cart-btn" title="Vaciar carrito">🗑️</button>
+            <button onclick="cerrarCarrito()" class="close-cart">✕</button>
+        </div>
+    </div>
+    <ul id="cart-list"></ul>
+    <div class="cart-footer">
+        <p>Total: <strong>$<span id="cart-total">0</span></strong></p>
+        <button onclick="enviarWhatsApp()" class="wsp-confirm-btn">
+            Confirmar por WhatsApp
+        </button>
+    </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    // ===============================
+    // VARIABLES GLOBALES
+    // ===============================
+    let carrito = [];
+    let productoTemporal = null;
+
+    const modal = document.getElementById('modal-ingredientes');
+    const listaOpciones = document.getElementById('lista-opciones');
+    const tituloModal = document.getElementById('modal-titulo');
+    const btnConfirmar = document.getElementById('btn-confirmar-add');
+
+    // ===============================
+    // BOTONES AGREGAR
+    // ===============================
+    document.querySelectorAll('.add-to-cart').forEach(boton => {
+
+        boton.addEventListener('click', () => {
+
+            const nombre = boton.dataset.nombre;
+            const precio = parseFloat(boton.dataset.precio);
+            const ingredientesStr = boton.dataset.ingredientes;
+
+            // Producto sin ingredientes
+            if (!ingredientesStr) {
+                agregarAlCarrito(nombre, precio, []);
+                return;
+            }
+
+            const ingredientes = ingredientesStr.split(',');
+            abrirModal(nombre, precio, ingredientes);
+        });
+
+    });
+
+    // ===============================
+    // ABRIR MODAL
+    // ===============================
+    function abrirModal(nombre, precio, ingredientes) {
+
+        productoTemporal = { nombre, precio };
+
+        tituloModal.textContent = nombre;
+        listaOpciones.innerHTML = "";
+
+        ingredientes.forEach(ing => {
+            const label = document.createElement("label");
+            label.className = "ingredient-option";
+            label.innerHTML = `
+                <input type="checkbox" value="${ing}" checked>
+                <span>${ing}</span>
+            `;
+            listaOpciones.appendChild(label);
+        });
+
+        modal.style.display = "flex";
+    }
+
+    // ===============================
+    // CERRAR MODAL
+    // ===============================
+    window.cerrarModal = () => {
+        modal.style.display = "none";
+        productoTemporal = null;
+    };
+
+    // ===============================
+    // CONFIRMAR INGREDIENTES
+    // ===============================
+    btnConfirmar.addEventListener("click", () => {
+
+        if (!productoTemporal) return;
+
+        const seleccionados = [];
+
+        listaOpciones
+            .querySelectorAll("input[type='checkbox']")
+            .forEach(c => {
+                if (c.checked) seleccionados.push(c.value);
+            });
+
+        agregarAlCarrito(
+            productoTemporal.nombre,
+            productoTemporal.precio,
+            seleccionados
+        );
+
+        cerrarModal();
+    });
+
+    // ===============================
+    // CARRITO
+    // ===============================
+    function agregarAlCarrito(nombre, precio, ingredientes) {
+
+        const key = ingredientes.sort().join(",");
+
+        const existente = carrito.find(
+            p => p.nombre === nombre && p.key === key
+        );
+
+        if (existente) {
+            existente.cantidad++;
+        } else {
+            carrito.push({
+                nombre,
+                precio,
+                ingredientes,
+                key,
+                cantidad: 1
+            });
+        }
+
+        actualizarUI();
+    }
+
+    function actualizarUI() {
+
+        const lista = document.getElementById("cart-list");
+        const totalSpan = document.getElementById("cart-total");
+        const contenedor = document.getElementById("cart-container");
+
+        lista.innerHTML = "";
+        let total = 0;
+
+        carrito.forEach((item, i) => {
+
+            total += item.precio * item.cantidad;
+
+            let detalle = "";
+            if (item.ingredientes.length) {
+                detalle = `<small style="color:#aaa">(${item.ingredientes.join(", ")})</small>`;
+            }
+
+            const li = document.createElement("li");
+            li.innerHTML = `
+                <div>
+                    <strong>${item.cantidad}x ${item.nombre}</strong><br>
+                    ${detalle}
+                </div>
+                <span>$${item.precio * item.cantidad}</span>
+                <button class="remove-item-btn" onclick="eliminar(${i})">✕</button>
+            `;
+            lista.appendChild(li);
+        });
+
+        totalSpan.textContent = total;
+        contenedor.style.display = carrito.length ? "flex" : "none";
+    }
+
+    window.eliminar = (i) => {
+        carrito[i].cantidad > 1
+            ? carrito[i].cantidad--
+            : carrito.splice(i, 1);
+        actualizarUI();
+    };
+
+    window.vaciarCarrito = () => {
+        if (confirm("¿Vaciar pedido?")) {
+            carrito = [];
+            actualizarUI();
+        }
+    };
+
+    window.cerrarCarrito = () => {
+        document.getElementById("cart-container").style.display = "none";
+    };
+
+    window.enviarWhatsApp = () => {
+
+        let msg = "¡Hola Sukimy Roll! 🌮\n\n";
+
+        carrito.forEach(p => {
+            const extras = p.ingredientes.length
+                ? ` (${p.ingredientes.join(", ")})`
+                : "";
+            msg += `• ${p.cantidad}x ${p.nombre}${extras}\n`;
+        });
+
+        msg += `\nTotal: $${document.getElementById("cart-total").textContent}`;
+
+        window.open(
+            `https://wa.me/526871451508?text=${encodeURIComponent(msg)}`,
+            "_blank"
+        );
+    };
+
+});
+</script>
+
+<div id="modal-ingredientes" class="modal-overlay">
+
+    <div class="modal-content">
+        <h3 id="modal-titulo">Producto</h3>
+        <p class="modal-subtitle">Selecciona los ingredientes</p>
+
+        <div id="lista-opciones" class="options-grid">
+        </div>
+
+        <div class="modal-actions">
+            <button class="btn-cancel" onclick="cerrarModal()">Cancelar</button>
+            <button class="btn-confirm" id="btn-confirmar-add">Agregar</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,774 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(240,240,240);
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    background: linear-gradient(135deg, Tomato, #ff9147);
+    padding: 35px 20px 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: relative;
+}
+
+.header-content {
+    max-width: 1000;
+    margin: 0 auto;
+    position: static;
+}
+
+.header-center {
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    background: white;
+    padding: 6px;
+    object-fit: contain;
+}
+
+.header-center h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.header-center p {
+    margin-top: 4px;
+    font-size: 16px;
+    opacity: .95;
+    font-weight: 500;
+}
+
+/* ================= CONTACTO ================= */
+
+.contact-box {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background: rgb(240,240,240);
+    color: #ff7a00;
+    padding: 16px 20px;
+    border-radius: 5px;
+    text-align: right;
+    width: max-content;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .28);
+    z-index: 10;
+}
+
+.contact-title {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.phone-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.copy-btn {
+    margin-top: 10px;
+    background: #ff7a00;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.copy-btn:active {
+    transform: scale(0.98);
+}
+
+/* ================= CONTENIDO ================= */
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 22px;
+}
+
+.section-title {
+    margin: 35px 0 20px;
+    font-size: 24px;
+    border-left: 5px solid #ff7a00;
+    Color: #333;
+    padding-left: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(135deg, Tomato, #ff9147);
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+    transition: transform 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    background: rgb(210,210,210);
+}
+
+.card-body {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.card-body p {
+    font-size: 14px;
+    color: snow;
+    font-style: oblique;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* --- NUEVOS ESTILOS PARA PRECIOS --- */
+
+.price-table {
+    margin-top: auto; /* Esto empuja al precio y al botón hacia el fondo */
+    width: 100%;
+}
+
+.price-row {
+    display: flex;
+    justify-content: flex-end; /* Alinea el texto a la DERECHA */
+    gap: 10px;                 /* Separa un poco la etiqueta del precio */
+    align-items: center;
+    margin-bottom: 5px;        /* Un respiro antes del botón */
+}
+
+.price-row:last-child {
+    margin-bottom: 0;
+}
+
+.p-value {
+    font-weight: bold;
+    font-size: 17px;
+    color: snow;
+}
+
+/* Estilo para productos que solo tienen un precio (Bebidas) */
+.single-price {
+    display: block;
+    margin-top: auto;
+    text-align: right;
+    font-weight: 700;
+    font-size: 18px;
+    color: snow;
+}
+
+/* ================= FOOTER ================= */
+
+footer {
+    text-align: center;
+    padding: 40px 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .header { padding-bottom: 30px; }
+    
+    .contact-box {
+        position: static;
+        margin: 25px auto 0;
+        text-align: center;
+        width: 100%;
+        max-width: 300px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    }
+
+    .phone-row { justify-content: center; }
+    .header-center h1 { font-size: 28px; }
+    .section-title { font-size: 22px; margin-top: 30px; }
+
+    .grid {
+        gap: 15px; 
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 380px) {
+    .grid { grid-template-columns: 1fr; }
+}
+
+/* ================= BOTONES WHATSAPP ================= */
+
+/* Botón del header */
+.wsp-btn {
+    display: block;
+    margin-top: 10px;
+    background: seagreen;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 16px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.wsp-btn:hover {
+    background: #1ebe57;
+}
+
+/* Botón grande del final */
+.footer-cta {
+    text-align: center;
+    margin: 40px 0 20px;
+}
+
+.wsp-btn-large {
+    display: inline-block;
+    background: linear-gradient(135deg, Tomato, #ff9147);
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 10px 20px #999;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.wsp-btn-large:hover {
+    transform: scale(1.05);
+    background: darkseagreen;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .wsp-btn-large {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+/* ================= BOTÓN FLOTANTE ================= */
+.floating-btn {
+    position: fixed;
+    bottom: 30px;      /* Más separado del borde en PC */
+    right: 30px;
+    background-color: rgb(240,240,240);
+    color:#333 !important;
+    text-decoration: none;
+    
+    /* Tamaño grande para PC */
+    padding: 16px 28px; 
+    font-size: 18px; 
+    
+    border-radius: 10px;
+    font-weight: 700;
+    box-shadow: 0 3px 12px #999;
+    z-index: 99999;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 4px solid rgb(220,220,220);
+    transition: all 0.3s ease;
+}
+
+.floating-btn:hover {
+    transform: scale(1.05);
+    background-color: #ff7a00;
+    border-color: tomato;
+}
+
+/* Animación suave para el salto al ID */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Para que no desaparezca en pantallas pequeñas */
+@media (max-width: 768px) {
+    .floating-btn {
+        bottom: 20px;   /* Más pegado al borde en Cel */
+        right: 15px;
+        
+        /* Tamaño más pequeño para Celular */
+        padding: 10px 16px; 
+        font-size: 13px; 
+        
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        gap: 6px;
+    }
+}
+
+.cart-floating {
+    position: fixed;
+    bottom: 80px; /* Arriba del botón flotante que ya tienes */
+    right: 20px;
+    background: #1a1a1a;
+    border: 2px solid #ff7a00;
+    padding: 20px;
+    border-radius: 7px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    z-index: 9999;
+    display: none; /* Se activa con JS */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.cart-floating h4 { color: #ff7a00; margin-bottom: 10px; }
+.cart-floating ul { list-style: none; padding: 0; font-size: 14px; }
+.cart-floating li { margin-bottom: 8px; border-bottom: 1px solid #333; padding-bottom: 4px; }
+
+@media (max-width: 768px) {
+    .cart-floating {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        bottom: 100px;
+    }
+}
+
+/* Botón Agregar dentro de la tarjeta */
+.add-to-cart {
+    width: 100%;
+    background: tomato;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    margin-top: 5px; /* Ya NO uses 'auto' aquí, usa un margen pequeño */
+
+    transition: background 0.2s;
+}
+
+.add-to-cart:hover{
+    background-color: #333;
+}
+
+.add-to-cart:active {
+    transform: scale(0.95);
+}
+
+/* Carrito Flotante */
+.cart-floating {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    background: #1a1a1a;
+    border: 2px solid #ff7a00;
+    padding: 15px;
+    border-radius: 15px;
+    width: 320px;
+    max-height: 450px;
+    display: none; /* Se muestra por JS */
+    flex-direction: column;
+    z-index: 10000;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding-bottom: 8px;
+}
+
+.close-cart { background: none; border: none; color: #666; cursor: pointer; }
+
+#cart-list {
+    list-style: none;
+    margin: 15px 0;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+#cart-list li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wsp-confirm-btn {
+    width: 100%;
+    background: #25d366;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .cart-floating {
+        width: 95%;
+        left: 2.5%;
+        right: 2.5%;
+    }
+}
+
+.cart-header-btns {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.empty-cart-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: filter 0.2s;
+}
+
+.empty-cart-btn:hover {
+    filter: grayscale(0);
+}
+
+/* Botón individual de eliminar item */
+.remove-item-btn {
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 24px;
+    height: 24px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ================= NAVEGADOR DE CATEGORÍAS ================= */
+.category-nav {
+    position: sticky;
+    top: 0;
+    background: rgb(240,240,240);
+    padding: 12px 0;
+    z-index: 1000;
+    border-bottom: 2px solid #ff7a00;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.nav-scroll {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 15px;
+    scrollbar-width: none; /* Oculta scroll en Firefox */
+}
+
+.nav-scroll::-webkit-scrollbar {
+    display: none; /* Oculta scroll en Chrome/Safari */
+}
+
+.nav-item {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: rgb(220,220,220);
+    transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+    background: #ff7a00;
+    color: #333;
+}
+
+/* Ajuste para que el título no quede tapado por la barra al saltar */
+h2.section-title {
+    scroll-margin-top: 80px; 
+}
+
+@media (max-width: 768px) {
+    .nav-scroll {
+        justify-content: flex-start; /* Permite scroll lateral en móvil */
+    }
+    .nav-item {
+        font-size: 13px;
+        padding: 6px 12px;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 20000; /* Por encima de todo */
+    display: none; /* Oculto por defecto */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    backdrop-filter: blur(5px);
+}
+
+.modal-content {
+    background: #1a1a1a;
+    border: 2px solid #ff7a00;
+    padding: 25px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    animation: popIn 0.3s ease;
+}
+
+@keyframes popIn {
+    from { transform: scale(0.8); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.modal-content h3 {
+    color: #ff7a00;
+    margin-bottom: 5px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.modal-subtitle {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.options-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/* Estilo de los Checkboxes */
+.ingredient-option {
+    display: flex;
+    align-items: center;
+    background: #333;
+    padding: 12px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+    user-select: none;
+}
+
+.ingredient-option:hover {
+    background: #444;
+}
+
+.ingredient-option input {
+    width: 20px;
+    height: 20px;
+    accent-color: #ff7a00;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.ingredient-option span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.modal-actions button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.btn-cancel {
+    background: #333;
+    color: white;
+}
+
+.btn-confirm {
+    background: #ff7a00;
+    color: white;
+}
+
+.btn-confirm:hover { background: #e06b00; }
+.btn-cancel:hover { background: #444; }
+
+/* ================= BOTÓN WHATSAPP FLOTANTE ================= */
+.floating-wsp-btn {
+    position: fixed;
+    bottom: 105px;        /* 👈 encima del botón de combos */
+    right: 30px;
+
+    background: linear-gradient(135deg, Tomato, #ff9147);
+    color: white !important;
+    text-decoration: none;
+
+    /* 🔥 MISMAS MEDIDAS QUE .floating-btn */
+    padding: 16px 28px;
+    font-size: 18px;
+    font-weight: 700;
+
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #999;
+    border: 4px solid tomato;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    z-index: 99999;
+    transition: all 0.3s ease;
+}
+
+.floating-wsp-btn:hover {
+    background: darkseagreen;
+    border-color: seagreen;
+    transform: scale(1.05);
+}
+
+/* ===== MÓVIL (idéntico al de combos) ===== */
+@media (max-width: 768px) {
+    .floating-wsp-btn {
+        bottom: 75px;
+        right: 15px;
+
+        padding: 10px 16px;
+        font-size: 13px;
+        gap: 6px;
+    }
+}
+
+/* ================= TEXTO DECORATIVO DE FONDO ================= */
+.bg-text-wrapper {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    right: -260px;
+
+    transform: translateY(-50%) rotate(90deg);
+
+    font-size: 200px;
+    font-weight: 900;
+    letter-spacing: 12px;
+
+    color: rgb(255, 80, 60); /* 🔥 SIN alpha */
+    opacity: 0.35;
+
+    user-select: none;
+    white-space: nowrap;
+}
+
+
+/* En móviles lo hacemos más discreto */
+@media (max-width: 768px) {
+    .bg-text {
+        font-size: 150px;
+        right: -200px;
+        opacity: 0.35;
+    }
+}
+
+/* ================= IMAGEN DECORATIVA FIJA ESQUINA IZQUIERDA ================= */
+.bg-image-left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 450px;      /* ajusta tamaño */
+    max-width: 60vw;
+
+    opacity: 0.90;     /* para que no robe atención */
+    z-index: 0;
+
+    pointer-events: none; /* no bloquea clicks */
+    user-select: none;
+}
+
+@media (max-width: 768px) {
+    .bg-image-left {
+        width: 180px;
+        opacity: 0.18;
+    }
+}
