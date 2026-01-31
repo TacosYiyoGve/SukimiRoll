@@ -719,7 +719,15 @@ h2.section-title {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 1;
+    z-index: 0; /* CAMBIADO de 1 a 0 */
+}
+
+.header, 
+.category-nav, 
+.container, 
+footer {
+    position: relative; /* Necesario para que el z-index funcione */
+    z-index: 10;        /* Un número mayor que 0 */
 }
 
 .bg-text {
@@ -743,10 +751,14 @@ h2.section-title {
 
 /* En móviles lo hacemos más discreto */
 @media (max-width: 768px) {
+    /* ... otros estilos que ya tengas ... */
+
     .bg-text {
-        font-size: 150px;
-        right: -200px;
+        font-size: 130px; /* Un poco más pequeño ayuda en pantallas angostas */
+        right: -180px;    /* Ajusta este valor: entre más negativo, más a la derecha se va */
         opacity: 0.35;
+        top: 50%;
+        transform: translateY(-50%) rotate(90deg);
     }
 }
 
