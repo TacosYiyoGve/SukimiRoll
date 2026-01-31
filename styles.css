@@ -273,6 +273,32 @@ footer {
     margin: 40px 0 20px;
 }
 
+.wsp-btn-large {
+    display: inline-block;
+    background: linear-gradient(135deg, Tomato, #ff9147);
+    color: white;
+    text-decoration: none;
+    padding: 18px 30px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 700;
+    box-shadow: 0 10px 20px #999;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.wsp-btn-large:hover {
+    transform: scale(1.05);
+    background: darkseagreen;
+}
+
+/* Ajuste para móviles */
+@media (max-width: 768px) {
+    .wsp-btn-large {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
 /* ================= BOTÓN FLOTANTE ================= */
 .floating-btn {
     position: fixed;
@@ -693,7 +719,7 @@ h2.section-title {
     position: fixed;
     inset: 0;
     pointer-events: none;
-    z-index: 0; /* CAMBIADO de 1 a 0 */
+    z-index: 0;
 }
 
 .header, 
@@ -725,14 +751,10 @@ footer {
 
 /* En móviles lo hacemos más discreto */
 @media (max-width: 768px) {
-    /* ... otros estilos que ya tengas ... */
-
     .bg-text {
-        font-size: 130px; /* Un poco más pequeño ayuda en pantallas angostas */
-        right: -180px;    /* Ajusta este valor: entre más negativo, más a la derecha se va */
+        font-size: 150px;
+        right: -200px;
         opacity: 0.35;
-        top: 50%;
-        transform: translateY(-50%) rotate(90deg);
     }
 }
 
