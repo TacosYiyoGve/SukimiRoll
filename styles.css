@@ -310,52 +310,16 @@ html {
 
 /* Para que no desaparezca en pantallas pequeñas */
 @media (max-width: 768px) {
-    /* 1. Ajuste del HEADER */
-    .header { 
-        padding-bottom: 30px; 
-    }
-    
-    .contact-box {
-        position: static;
-        margin: 25px auto 0;
-        text-align: center;
-        width: 100%;
-        max-width: 300px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.15);
-    }
-
-    .phone-row { justify-content: center; }
-    .header-center h1 { font-size: 28px; }
-    .section-title { font-size: 22px; margin-top: 30px; }
-
-    /* --- AQUÍ ESTÁ LA MAGIA --- */
-
-    /* 2. Empujamos el contenido a la IZQUIERDA dejando espacio a la derecha */
-    .container {
-        /* "margin-right" crea una zona muerta a la derecha donde irá el texto */
-        margin-right: 60px; 
-        padding: 10px; /* Reducimos un poco el padding interno */
-    }
-
-    /* 3. Configuramos las tarjetas para que llenen ese espacio izquierdo */
-    .grid {
-        /* Usamos 1 sola columna para que la tarjeta se vea grande y legible */
-        grid-template-columns: 1fr; 
-        gap: 15px;
-    }
-
-    /* 4. Ajustamos el texto SUKIMY para que quepa en el espacio libre */
-    .bg-text {
-        font-size: 70px;   /* Mucho más pequeño (antes 150px) */
-        right: -15px;      /* Lo pegamos al borde derecho visible */
-        opacity: 0.8;      /* Un poco más visible */
+    .floating-btn {
+        bottom: 20px;   /* Más pegado al borde en Cel */
+        right: 15px;
         
-        /* Mantenemos el centrado vertical y la rotación */
-        top: 50%;
-        transform: translateY(-50%) rotate(90deg);
+        /* Tamaño más pequeño para Celular */
+        padding: 10px 16px; 
+        font-size: 13px; 
         
-        /* Aseguramos que se quede quieto */
-        position: fixed;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        gap: 6px;
     }
 }
 
